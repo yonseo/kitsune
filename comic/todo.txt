@@ -1,0 +1,24 @@
+==============BUGS:
+DONE: - fix page links to comic page
+DONE: - create a folder upon upload if it does not exists
+DONE: - create a thumbnail from uploaded image and save in thumb directory
+DONE: - add cover image upload when creating a new series
+DONE: - fix bug uploading cover image for chapters/ delete old cover image
+DONE: - new series, edit series, edit chapter, upload pages, upload chapter
+DONE: - fix image src links
+DONE: - allow custom chapter when creating a new chapter
+DONE: - write a reusable image upload class
+DONE: - pages folder should only be created inside a chapter folder
+DONE: - set the thumbnail folder to copy original image to
+DONE: - add user login
+
+Required:
+- add pagination to sql
+
+Features:
+- add breadcrumb
+- add editable navigation links
+- resize image to make thumbnail when uploading images
+
+
+

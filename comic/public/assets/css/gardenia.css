@@ -1,0 +1,519 @@
+body {
+  background-image: url(../img/dots.jpg);
+  height:100%;
+  max-width: 100%
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f5f5fb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9293a5;
+  font-size: 14px;
+}
+
+.spacer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+error {
+  border: solid 1px #36363e;
+  background-color: #4e4e4e;
+  padding: 5px;
+}
+
+.alert {
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+}
+
+.success {
+  background-color: #73f1e4;
+  border: solid 1px #00d2cf;
+}
+
+.danger {
+  background-color: #f17397;
+  border: solid 1px #ff0f49;
+}
+
+a:hover, a:focus {
+  color: #6e7784;
+}
+
+#main-wrapper {
+  position: absolute;
+  left: 200px;
+  right: 0px;
+}
+
+#sidebar-wrapper {
+  position: absolute;
+}
+/* Second-Sidebar CSS */
+#second-sidebar {
+  width: 200px;
+  left: -80px;
+}
+/*-------------------------------------------- COMIC PAGE */
+.comic-flip {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: solid 1px #ccd5de;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 15px 0px #dcdff1;
+}
+/*-------------------------------------------- COMIC THUMB */
+.comic-thumb-container {
+  display: inline-block;
+  padding: 9px;
+}
+
+.comic-thumb-container p{
+  font-size: 13px;
+  color: #9295ad;
+  word-break: break-all;
+  max-width: 200px;
+}
+.comic-thumb {
+  width: 200px; 
+  height: 320px; 
+  border: solid 1px #d0d0e0;
+}
+.comic-page {
+  padding: 10px;
+  border: solid 1px #ccd5de;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 15px 0px #dcdff1;
+}
+/*-------------------------------------------- FOLDER TREE */
+.tree {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #9295ad;
+}
+.tree ul {
+  list-style: none;
+  padding-left: 5px;
+  li{
+    padding-left: 16px;
+    position: relative;;
+    box-sizing: border-box;
+    &:before{
+      content: '';
+      height: 1px;
+      width: 10px;
+      background-color: #333;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      margin: auto;
+    }
+    &::after{
+      content:'';
+      width: 1px;
+      height: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+    &:last-child{
+      &::after{
+        height: 10px;
+      }
+    }
+  }
+  a{
+    cursor: pointer;
+    &:hover{
+      color:#333;
+      text-decoration: none;
+    }
+  }
+}
+
+
+/*-------------------------------------------- FOOTER */
+.footer {
+  height: 58px;
+  /*position: absolute;*/
+  bottom: 0;
+  background-color: #e0e0ea;
+  left: 150px;
+  right: 0px;
+  overflow-y: overlay;
+  color: #6e7784;
+  padding: 20px;
+  font-size: 12px;
+}
+.footer a, .footer p {
+  color: #6e7784;
+}
+/*-------------------------------------------- NAV BAR */
+.top-bar {
+  height: 36px;
+  padding: 0px;
+  background-color: #fff;
+  border-bottom: solid 1px #bec6d2;
+  box-shadow: 0px 6px 10px 0px #ccd1e2;
+  position: relative; /* IMPORTANT. MAKE SHADOW DISPLAY ON TOP */
+}
+.top-bar ul {
+  background-color: #fff;
+}
+.top-bar-right a {
+  color: #9293a5;
+  border-left: solid 1px #9293a5;
+  font-size: 12px;
+  background-color: #fff;
+}
+.top-bar-left .title {
+  color: #9293a5;
+  border: solid 1px #9293a5;
+  font-size: 12px;
+  background-color: #fff;
+  margin-left: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+/* NAV BAR MAIN TITLE */
+.menu .menu-text {
+  padding: 0.7rem 1rem;
+  font-weight: 100;
+  line-height: 0;
+  color: #868692;
+}
+/*--------------------------------------- NAV BAR SLIM */
+.slim {
+  height: 33px;
+  background-color: #f7f7fb;
+  border-bottom: solid 1px #bec6d2;
+  box-shadow: none;
+  width: 100%;
+}
+
+.slim a, .slim p, .slim li{
+  color: #fff;
+  background-color: #ffffff00;
+  border: none;
+}
+
+.slim li{
+  list-style: none;
+}
+
+.slim ul {
+  margin: 0px;
+  background-color: #ffffff00;
+}
+
+.slim .button {
+  padding: 5px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #00c0e3;
+}
+
+.slim .button:hover {
+  padding: 5px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #647484;
+}
+
+.slim .top-bar-right {
+  margin-right: 10px;
+}
+
+.slim .top-bar-left {
+  margin-left: 10px;
+}
+/*--------------------------------------- Image Container */
+.image-container {
+  height: auto;
+  width: 350px;
+  max-width: 350px;
+}
+/*--------------------------------------- BLOCK */
+.block-container {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  background-image: url(../img/squares.png);
+  background-size: cover;
+  color: #fff;
+}
+
+.block {
+  display: inline-block;
+}
+
+.block-tower {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #200a36;
+  color: #fff;
+}
+
+.tower-card {
+  height: 100%; 
+  margin: 0px; 
+  padding-left: 60px; 
+  padding-right: 60px; 
+  padding-top: 90px;
+  border: solid 7px #200a36;
+}
+/*--------------------------------------- BUTTONS */
+.button-round {
+  width: 100px;
+  height: 40px;
+  font-size: 13px;
+  padding: 5px;
+  background-color: #00bbff;
+  border-radius: 50px;
+  border: solid 1px #46cbfb;
+  color: #fff;
+  box-shadow: 0px 2px 1px 1px #bcedff;
+}
+
+/*--------------------------------------- HAMBURGER CSS*/
+#hamburger {
+
+}
+#cheeseburger {
+
+}
+/* ===================================================== USER CARD STYLE ==================== */
+.user-card {
+  font-size: 13px;
+  margin: 10px;
+  display: inline-block;
+  max-width: 400px;
+  background-color: #fff;
+  border-bottom: solid 3px #47588a;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: #6e7784;
+  background-size: 150px 200px;
+  box-shadow: 0px 2px 5px 0px #b3b5bf;
+  background-image: url(../img/user_card.png);
+  background-size: cover;
+}
+.user-card a, .user-card p {
+  color: #6e7784;
+}
+.user-card img {
+  padding: 8px;
+  border: solid 1px #b4b8c3;
+  box-shadow: 0px 6px 10px 0px #ccd1e2;
+}
+/*--------------------------------------------------- CARD ------------------------*/
+.sharp-card {
+  border: solid 1px #bec6d2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 6px 10px 0px #ccd1e2;
+}
+.info-card {
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #bec6d2;
+  background-color: #fff;
+  box-shadow: 0px 6px 10px 0px #ccd1e2;
+}
+.empty-card {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: none;
+}
+/*--------------------------------------------------- ACCORDION FAQ ------------------------*/
+.accordion-title {
+  font-weight: 600;
+  border: solid 1px #9293a5;
+  background-color: #f9f9f9;
+  color: #6e7784;
+  margin-top: 10px;
+}
+
+.accordion-content a {
+  color: #88ccdc;
+}
+
+.accordion-content p {
+  color: #6e7784;
+}
+
+/* ===================================================== SIDEBAR STYLE ==================== */
+.sidebar {
+  background-image: url('../img/boxes.png');
+  display: block;
+  position: fixed;
+  overflow-y: auto;
+  width: 200px;
+  height: 100%;
+  font-size: 13px;
+  border-right: solid 1px #bec6d2;
+  background-color: #fff;
+  color: #919cad;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  -webkit-transition: left 0.3s ease-in-out;
+  box-shadow: 0px 2px 45px 0px #b5bad8;
+}
+.sidebar a {
+    color: #6e7784;
+}
+.sidebar i {
+  color: #000;
+}
+.side-nav label{
+  font-weight: 600;
+  font-size: 11px;
+  color: #6e7784;
+}
+.side-nav a{
+  display: block;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 6px;
+  padding-right: 15px;
+  font-weight: 600;
+  color: #9295ad;
+}
+/* NAV_MENU ICON */
+.side-nav a::after {
+  font-family: FontAwesome;
+  content: "\f067";
+  float: right;
+}
+
+/* Hover Item */
+.side-nav li:hover {
+
+}
+/* No bullets for side-nav*/
+.side-nav li {
+  list-style: none;
+}
+/* Font-Awesome Icon Padding for side-nav*/
+.side-nav i {
+  padding-right: 5px;
+  color: #9295ad;
+}
+
+.sub-menu {
+  display: none;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.sub-menu li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sub-menu a:hover{
+  padding-right: 2px;
+}
+/* SUB-MENU ICON */
+.sub-menu a::after{
+  font-family: FontAwesome;
+  content: "\f07c";
+  float: right;
+  padding-right: 10px;
+}
+
+.logo {
+  height: 50px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*---------------------------------------- RESPONSIVE VIDEO */
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+/*---------------------------------------- MOBILE VIEW */
+@media only screen and (max-width: 1000px) {
+    /*Hide Top BAR Buttons*/
+    .top-bar-right ul {
+      display: none;
+    }
+    .top-bar-left {
+      margin-top: 4px;
+    }
+    .top-bar-left .title {
+      padding-top: 7px;
+    }
+    .top-bar {
+      height: 46px;
+    }
+
+    /*Hide Top BAR SLIM*/
+    .slim{
+      display: none;
+    }
+    /* Hide Body Content */
+    .grid-container, .grid-x,.sharp-card, .footer {
+      /* display: none; */
+    }
+    #sidebar-wrapper{
+      display: none; 
+    }
+    #main-wrapper{
+      left: 0px;
+    }
+    #cheeseburger {
+      /* margin-left: 90px; */
+    }
+
+}
+/*---------------------------------------- DESKTOP VIEW */
+@media only screen and (min-width: 1000px) {
+   
+    #cheeseburger {
+      display: none;
+    }
+
+}
