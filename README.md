@@ -1,2 +1,2 @@
 # kitsune
-Comic App in php.
+Comic App in fuelphp.
