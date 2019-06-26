@@ -9,4 +9,4 @@ Getting Started
 4) Simply import the sql file in phpMyAdmin to the database kitsune_db.
 5) Go to http://localhost to launch the app.
 
-Now you can test the app by uploading your own comic pages and create new books and read them. each comic book has an eye icon to read or a wrench/gear icon to edit.
+Now you can test the app by uploading your own comic pages and create new books and read them. Each comic book has an eye icon to read or a wrench/gear icon to edit.
